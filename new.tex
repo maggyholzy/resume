@@ -1,0 +1,322 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%
+% Modified by: Zeeshan Hooda
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[
+  left=0.5in,
+  right=0.5in,
+  top=0.5in,
+  bottom=0.5in,
+  includefoot,
+  footskip=20pt
+]{geometry}
+\usepackage[us,nodayofweek]{datetime}
+%% \renewcommand{\dateseparator}{.}
+
+\input{glyphtounicode}
+
+\newcommand{\deemph}[1]{\small\textit{\color{black!40}#1}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\fancyfoot[C]{\vfill\deemph{Zeeshan Hooda --- Senior ML Engineer}}
+\fancyfoot[R]{\vfill\deemph{Page \thepage~of~\pageref*{LastPage}}}
+\fancyfoot[L]{\vfill\deemph{Rev. \today}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%% \addtolength{\oddsidemargin}{-0.5in}
+%% \addtolength{\evensidemargin}{-0.5in}
+%% \addtolength{\textwidth}{1in}
+%% \addtolength{\topmargin}{-.5in}
+%% \addtolength{\footskip}{20pt}
+%% \addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% NOTE: For International Applications
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://zeeshan.hooda.dev/}{\Large Zeeshan Hooda}} & \href{https://zeeshan.hooda.dev/}{zeeshan.hooda.dev}\\
+  \href{tel:+15875686239}{+1 (587) 568-6239} & \href{https://linkedin.com/in/zeeshanhooda}{linkedin.com/in/zeeshanhooda} \\
+    \href{mailto:zhooda@protonmail.com}{zhooda@protonmail.com} & Canada (Relocating to Australia)
+\end{tabular*}
+
+% NOTE: For Local/NA Applications
+%% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%%   \textbf{\href{https://zeeshan.hooda.dev/}{\Large Zeeshan Hooda}} & Canadian Citizen\\
+%%   \href{tel:+15875686239}{+1 (587) 568-6239} &  \href{https://zeeshan.hooda.dev/}{zeeshan.hooda.dev}\\
+%%     \href{mailto:zhooda@protonmail.com}{zhooda@protonmail.com} & \href{https://linkedin.com/in/zeeshanhooda}{linkedin.com/in/zeeshanhooda}
+%% \end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      %% {OpsGuru, A Carbon60 Company}{Toronto, CAN}
+      {OpsGuru, A Carbon60 Company}{Toronto, ON}
+      {Senior AI/ML Engineer}{Oct 2023 - Present}
+      \resumeItemListStart
+        \resumeItem{Large Language Models}
+          {Reduced qualitative survey analysis times by 95\% for a customer experience management client using DSPy, fine-tuned LLMs on Amazon Bedrock, and classical NLP with spaCy.}
+        \resumeItem{Deep Learning}
+          {Optimized U-Nets for an energy client, scaling real-time leak detection to 11,800 pipeline miles.}
+        \resumeItem{Machine Learning}
+          {Operationalized XGBoost promotion targeting system for a toll highway operator, decreasing training times by 30x and saving US\$880K in annual cloud costs.}
+        \resumeItem{Machine Learning Operations}
+          {Designed and implemented 10+ MLOps solutions on Amazon SageMaker, developing processes, infrastructure, and training materials for each stage in the MLOps workflow.}
+      \resumeItemListEnd
+
+% --------Multiple Positions Heading------------
+   \resumeSubSubheading
+    {Senior Data/ML Engineer}{Oct 2022 - Oct 2023}
+    \resumeItemListStart
+       \resumeItem{Large Language Models}
+         {Engineered a chatbot RAG system for interacting with internal knowledge bases, outperforming Amazon Q by 90\% on question-answering tasks using Amazon Bedrock, Chainlit, and Terraform.}
+       \resumeItem{Professional Services}
+          {Led cross-functional teams in 20+ Data, ML, and MLOps engagements from pre-sales to completion, including discovery, talent casting, report creation, implementation, and escalations ;-).}
+       \resumeItem{Data Modeling}
+          {Designed complex canonical data models for public and private sector clients in highly regulated environments, receiving CSAT scores of 9.8+/10.0 for efforts in understanding customer domains.}
+    \resumeItemListEnd
+   %% \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      %% {Smart Access}{San Francisco, USA}
+      {Smart Access}{San Francisco, CA}
+      {Lead Data Scientist}{Oct 2021 - Oct 2022}
+      \resumeItemListStart
+        \resumeItem{Clickstream Analytics}
+          {Designed an analytics service to collect 20M+ weekly interactions and enabled high-confidence analysis of multi-event and multi-session clickstreams.}
+        \resumeItem{Machine Learning}
+          {Reduced seasonal employee turnover for an F500 retailer by 30\% in 70 stores using survival analysis to predict time-to-quit, enabling early intervention and saving US\$4M in annual onboarding costs.}
+        %% \resumeItem{Best Practices}
+        %%   {Implemented environment isolation for data and analytics infrastructure to alleviate production incidents and adhere to software best practices.}
+        %% \resumeItem{Data Warehousing}
+        %%   {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
+        \resumeItem{Leadership}
+          {Staffed and supervised a team of 5 data scientists, engineers, and analysts, balancing ad-hoc analysis requests with long-term goal planning, research and experimentation, and platform maintenance.}
+        %% \resumeItem{Content Discovery}
+        %%   {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
+        %% \resumeItem{Course Dashboards}
+        %%   {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+    {Data Scientist}{Apr 2021 - Oct 2021}
+    \resumeItemListStart
+       \resumeItem{Natural Language Processing}
+         {Improved relevance of search results by 70\% using lemmatization, synonymization, and thematic clustering techniques to enable semantic search of platform content.}
+        \resumeItem{Platform Operations}
+          {Architected and implemented a self‐serve data and MLOps platform on GCP using BigQuery, Dataproc, Superset, MLFlow, and Python.}
+          %% {Architected and implemented a self‐serve data and MLOps platform on GCP using BigQuery, Dataproc, Debezium, Airflow, Superset, MLFlow and Python, increasing data freshness by 20x.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      %% {Redman Technologies}{Edmonton, CAN}
+      {Global Quantitative Strategies, Citadel}{New York, NY}
+      {Visiting Quantitative Researcher, Remote}{Sept 2020 - Apr 2021}
+      \resumeItemListStart
+        \resumeItem{Machine Learning}
+          {Implemented and optimized LightGBM in hardware using SystemVerilog for deployment on Xilinx FPGAs in high-frequency securities trading environments.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      %% {SensorUp}{Calgary, CAN}
+      {SensorUp}{Calgary, AB}
+      {Data Scientist}{Sept 2018 - Sept 2020}
+      \resumeItemListStart
+        \resumeItem{Computer Vision}
+          {Fine-tuned and deployed hazard detection models on edge devices to 400 remote industrial sites using AWS Lambda, DeepStream, and YOLO, reducing average hazard reaction time by 75\%.}
+        %% \resumeItem{Data Architecture}
+        %%   {Reduced ingestion times of customer data 20x by developing a multi-tenant data platform using Airflow, Python, PySpark, and Redshift.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{ML Delivery Toolkit}
+      {Processes and heuristics for evaluating and operationalizing machine learning systems.}
+    \resumeSubItem{M2K Classifier}
+      {Identifying child-appealing marketing with computer vision and natural language processing.}
+    \resumeSubItem{IHL}
+      {Research DSL for structured programming of LLM-based applications as a type-safe alternative to DSPy.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      %% {University of California, Berkeley}{Berkeley, USA}
+      {University of California, Berkeley}{Berkeley, CA}
+      {Doctor of Philosophy in Computer Science (In Progress)\vspace{4pt}}{Sparsity in Clickstream Inference}
+    %% \resumeSubSubheading
+    %%   {Master of Science (MSc) in Computer Science\vspace{4pt}}{2023}
+    \resumeSubSubheading
+      {Bachelor of Science in Computer Science and Statistics (summa cum laude)}{Statistical Machine Learning}
+      %% {Bachelor of Science (BSc) in Computer Science;  GPA: 3.98/4.00}{Sept 2019 -- Apr 2022}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Languages}{Python, SQL, Go, C, Scala, JavaScript, OCaml, ReasonML, CUDA, MLIR, SystemVerilog, \LaTeX}
+   \resumeSubItem{Technologies}{AWS, GCP, Terraform, Docker, Kafka, Trino, Spark/MLlib PyTorch, JAX/XLA, scikit-learn, spaCy}
+ \resumeSubHeadingListEnd
+
+
+\section{Manuscripts in Review}
+  \resumeSubHeadingListStart
+    \resumeSubItem{MarkovEFB}
+      {Improving sparse clickstream gradient boosting with Markov-modulated exclusive feature bundling.}
+    \resumeSubItem{LegalCoder}
+      %% {LLM-based annotator for legal texts to produce verifiable code implementations in the Catala DSL.}
+      %% {Automating formal verification of legislative texts with LLM-based annotation of Catala code.}
+      {Automating formal verification of legislative texts using language model annotators for the Catala DSL.}
+    \resumeSubItem{InaraNet}
+      {Antimicrobial peptide recognition with involutional and long short-term memory neural networks.}
+    %% \resumeSubItem{MarkovGBM}
+    %%   {Markov-modulated feature bundling for efficient gradient boosting on sparse clickstreams.}
+  \resumeSubHeadingListEnd
+
+\section{Awards and Grants}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Citadel GQS Fellowship}{One-year PhD fellowship providing US\$100,000 in research funding ($2\times$).}
+   \resumeSubItem{NSERC PGS Doctoral}{Three-year PhD scholarship providing CA\$63,000 in research funding ($1\times$).}
+   \resumeSubItem{Fulbright Canada Student}{One-year undergraduate grant providing US\$25,000 in funding ($3\times$).}
+   %% \resumeSubItem{Apple Scholars in AI/ML}{Two-year PhD fellowship providing mentorship and US\$90,000 in funding.}
+ \resumeSubHeadingListEnd
+
+%-------ADDITIONAL EXPERIENCE----------
+\section{Previous Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      %% {Sprout Fund}{Edmonton, CAN}
+      {Sprout Fund I/II}{Edmonton, AB}
+      {Venture Capital Advisor, AI/ML}{Sept 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{Investment Analysis}
+          {Evaluated 40+ ML-focused startup companies for technical viability and product-market fit, providing decision support and knowledge translation to the investment management team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      %% {Redman Technologies}{Edmonton, CAN}
+      {Redman Technologies}{Edmonton, AB}
+      {Software Engineer (Internship)}{Summer 2017, 2018}
+      \resumeItemListStart
+        \resumeItem{Full-stack}
+          {Built a visualization platform for neighborhood statistics using CouchDB, Node.js, and Express deployed to 1400+ Realtors across Canada.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mozilla Foundation}{Portland, OR}
+      %% {Compiler Engineer Intern}{Portland, USA}
+      {Compiler Engineer (Internship)}{Summer 2016}
+      \resumeItemListStart
+        \resumeItem{Memory Allocation}
+          {Designed and implemented a type-partitioning memory allocator used in experimental browser engines, scripting language runtimes, and just-in-time compilers.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% ------- QUOTE -------
+%% \hrule
+%% \vspace*{\fill}
+%% \begin{center}
+%%   \parbox{90mm}
+%%          {\textit{Your scientists were so preoccupied with whether they could, they didn’t stop to think if they should.} \\
+%%           \vspace{-1.5em}
+%%           \begin{flushright}
+%%             ---\textit{Jurrasic Park (1993)}
+%%           \end{flushright}
+%%           }
+%% \end{center}
+%% \vspace*{\fill}
+
+%-------------------------------------------
+\end{document}

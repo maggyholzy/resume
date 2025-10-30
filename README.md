@@ -4,7 +4,7 @@ My resume, largely sourced and inspired from [Awesome CV](https://github.com/pos
 View the [PDF](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/zhooda/resume/master/resume.pdf).
 
 <div align="center">
-  Resume to go here
+  <img alt="Résumé" src="https://raw.githubusercontent.com/maggyholzy/resume/main/resume.png" width="70%" />
 </div>
 
 # Compile

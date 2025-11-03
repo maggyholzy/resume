@@ -12,15 +12,10 @@ View the [PDF](https://docs.google.com/viewer?url=https://raw.githubusercontent.
 You'll need a distribution of LaTeX (texlive works the best for me) and GNU make
 
 ```bash
-$ git clone https://github.com/zhooda/resume.git
+$ git clone https://github.com/maggyholzy/resume.git
 $ cd resume
 
-# make resume and cover letter
-$ make
-# resume only
-$ make resume
-# cover letter only
-$ make cvl
-```
+# make resume 
+$ make new
 
 Compiled PDFs will be `resume.pdf` and `cvl.pdf`. Make will usually exit with an error but LaTeX should have compiled the files properly.

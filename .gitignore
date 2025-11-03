@@ -7,6 +7,7 @@
 *.fls
 *.out
 *.toc
+*.sh
 
 ## Intermediate documents:
 *.dvi

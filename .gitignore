@@ -8,7 +8,7 @@
 *.out
 *.toc
 *.sh
-*.pdf 
+ 
 
 ## Intermediate documents:
 *.dvi

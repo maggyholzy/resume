@@ -8,9 +8,9 @@
 
 all: new
 
-new: magnolia-holzwarth-mechatronics-engineer
+new: magnolia-industrial-designer-engineer
 
-magnolia-holzwarth-mechatronics-engineer: new.tex
+magnolia-industrial-designer-engineer: new.tex
 	pdflatex -jobname=$@ $^
 
 

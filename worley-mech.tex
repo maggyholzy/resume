@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%
+% Modified by: Magnolia Holzwarth
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[
+  left=0.5in,
+  right=0.5in,
+  top=0.5in,
+  bottom=0.5in,
+  includefoot,
+  footskip=20pt
+]{geometry}
+\usepackage[us,nodayofweek]{datetime}
+%% \renewcommand{\dateseparator}{.}
+
+\input{glyphtounicode}
+
+\newcommand{\deemph}[1]{\small\textit{\color{black!40}#1}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\fancyfoot[C]{\vfill\deemph{Mitchell Holzwarth --- Mechatronics Engineer}}
+\fancyfoot[R]{\vfill\deemph{Page \thepage~of~\pageref*{LastPage}}}
+\fancyfoot[L]{\vfill\deemph{Rev. \today}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%% \addtolength{\oddsidemargin}{-0.5in}
+%% \addtolength{\evensidemargin}{-0.5in}
+%% \addtolength{\textwidth}{1in}
+%% \addtolength{\topmargin}{-.5in}
+%% \addtolength{\footskip}{20pt}
+%% \addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% NOTE: For International Applications
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://magzone.ca/}{\Large Magnolia Holzwarth}} & \href{https://magzone.ca/}{magzone.ca}\\
+  \href{tel:+14038949375}{+1 (403) 894-9375} & \href{https://www.linkedin.com/in/magnolia-holzwarth-16b8171b5/}{https://www.linkedin.com/in/magnolia-holzwarth-16b8171b5/} \\
+    \href{mailto:maggyholzy@gmail.com}{maggyholzy@gmail.com} & Canada 
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Calgary, Alberta}{Alberta, AB}
+      {Bachelor of Science, Mechanical Engineer, Mechatronics Minor}{Graduated with a 3.8 GPa in November, 2024}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SOLIS}{Calgary, AB}
+      {Product Designer, Contract}{Jul 2024 - Feb 2026}
+      \resumeItemListStart
+        \resumeItem{Embedded Development}
+          {Developed and delivered firmware for the ESP-IDF and STM32 platforms to drive a CCD sensor, gather image data, and transmit 4K pixel images to a computer running a custom driver, via serial connection. Engaged with online resources surrounding the development of embedded firmware for the STM32 and ESP32 platforms.}
+        \resumeItem{PCB Design}
+          {Designed, procured, and tested product boards containing microcontrollers, optical sensors, and USB-C connectors. Used KiCAD extensively for product design.}
+        \resumeItem{Optical Device Design}
+          {Designed and prototyped a NIR micro-spectrograph using advanced hardware miniaturization techniques and fiber optic techonlogy to save \$200k on material and assembly costs. Oversaw E-commerce shop creation for finished product. Used SOLIDWORKS and OnShape CAD programs to facilitate product design.}
+        \resumeItem{Prototype Fabrication}
+          {Soldered wires, thru-hole components, and surface-mounted compontents such as chips and op-amps to create a functioning prototype device. Performed rapid-prototyping via assembling 3D-printed housings, electronic components, and optical elements. Demonstrated product functionality in investor meetings.}
+      \resumeItemListEnd
+
+
+
+    \resumeSubheading
+      {WSP}{Calgary, AB}
+      {Project Engineering Intern}{Jan 2022 - Jan 2023}
+      \resumeItemListStart
+        \resumeItem{Mechanical Design}
+          {Authored, audited, and red-lined piping and instrumentation diagrams for multiple oil \& gas capital improvement projects worth over \$150 million. Performed piping stress calculations for over 3 kilometers of 42" OD pipeline to ensure compliance with B149 and other applicable standards. Performed heating calculations to facillitate the commissioning of mutliple HVAC units.}
+        \resumeItem{Procurement}
+          {Authored quotation requests and oversaw the appraisal and procurement process on over \$88 million of oil and gas assets, including piping, valves, pipe fittings, remote buildings, and HVAC units. Communicated with vendors as a consultant on behalf of WSP's client, Enbridge, to fulfill the scope of reqeuirements on time. Navigated inflated lead-times during the tail-end of the pandemic. Assisted and supported the project management process.}
+        \resumeItem{Engineering Automation}
+          {Developed and maintained scripts to automate the process of comparing current MTO (material takeoff) line-items to exports generated automatically by AutoCAD technicians working on a separate team. This allowed over \$20 million in erroneous procurement to be avoided, and additionally saved months of lead time on project delivery.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Instrumentation Networking Draftsperson}{Jan 2022 - Jan 2023}
+      \resumeItemListStart
+         \resumeItem{Instrumentation Drafting}
+          {Effectively managed two subordinate draftspeople on the ESAP heating upgrade in Ottawa, and audited final network drawings with respect to internal documentation. Oversaw the authoring of over 200 pages of networking documentation on behalf of the federal government. Participated in team reviews of project design material.}
+          {Developed a software system for auditing and correcting instrument index line items against prior versions, color-coding and raising line-items with changes or discrepencies to aid in engineering review. Saved over 100 hours a week of budgeted engineer hours for the duration of the project.}
+      \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+    
+    \resumeSubheading
+      {SOS Electrical}{Calgary, AB}
+      {Apprentice Electrician}{April 2020 - November 2020}
+      \resumeItemListStart
+        \resumeItem{Electrical Installations}
+          {Performed installations of electrical infrastructure across multiple dozen construction sites both commercial and residential. Conducted maintenance on variable frequency drives, lighting fixtures, and power conduits. Drove the company maintenance van to and from job sites. Kept a clean and organized working space. Identified safety hazards on site and notified the relevant personnel.}
+        \resumeItem{Manual Tasks}
+          {Regularly completed tasks such as erecting scaffolding, digging trenches, or simply carrying items weighing in excess of fifty pounds to and from vehicles.}
+      \resumeItemListEnd
+      
+      
+    \resumeSubheading
+      {Department of National Defense}{Cold Lake, AB}
+      {Junior Infrastructure Planner}{May 2021 - Sep 2021}
+      \resumeItemListStart
+        \resumeItem{HVAC Design}
+          {Planned, engineered, and drafted several HVAC systems for 3 mission critical military buildings at CFB Cold Lake, including cooling systems for servers directly governing fighter jet flight operations. Drafted comprehensive and professional Scope of Work (SOWs) and ensured project alignment through consistent follow-ups with contractors throughout the construction quoting process.}
+
+        \resumeItem{Office Automation}
+          {Saved over \$156k and multiple weeks of labor hours among senior staff via the design of paperwork automation scripts to go re-format and organize legacy scopes of work into a format easily accessible by military personnel.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Apparel Folding Device}
+      {Mechatronics device capable of rapidly and reliably folding apparel garments such as tee-shirts, sweat-shirts, and hoodies. Developed in collaboration with local calgary business Local Laundry. \href{https://www.youtube.com/shorts/yz74BolRoSI}{Video demonstration.}}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Design Programs}{KiCAD, SOLIDWORKS, OnShape, AutoCAD (and related), ESP-IDF, STM32-IDE, Ladder Logic, Git/Github, Visual Studio Code}
+   \resumeSubItem{Languages}{Python, C++, C, C\#, SQL, \LaTeX, OpenCV, HTML/CSS, Nginx}
+   \resumeSubItem{Office Software}{Microsoft Office Suite, Git, Bluebeam}
+ \resumeSubHeadingListEnd
+
+
+
+%-------ADDITIONAL EXPERIENCE----------
+\section{Previous Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Calgary}{Calgary, AB}
+      {Schulich Engineering Challenge, Senior Division Director}{July 2020 - Sept 2020}
+      \resumeItemListStart
+        \resumeItem{Leadership}
+          {Lead design and delivery of a collegiate engineering competition centered around robotics automation. Winning team went on to win at the regional level at WEC 2020 (Westen Canada Engineering Challenge), and at the national level later on.}
+        \resumeItem{STEM Outreach}
+          {Conducted STEM education outreach at town halls and schools, promoting science and engineering to diverse audiences and inspiring the next generation of engineering students.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}

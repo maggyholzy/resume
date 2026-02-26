@@ -6,11 +6,17 @@
 # cvl: cvl.tex
 # 	xelatex -interaction=nonstopmode cvl.tex
 
-all: new
+all: new worley
 
 new: magnolia-industrial-designer-engineer
 
+worley: magnolia-holzwarth-mechanical-eit
+
 magnolia-industrial-designer-engineer: new.tex
 	pdflatex -jobname=$@ $^
+
+magnolia-holzwarth-mechanical-eit: worley-mech.tex
+	pdflatex -jobname=$@ $^
+
 
 
